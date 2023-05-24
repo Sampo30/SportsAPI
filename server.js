@@ -1,9 +1,12 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors');
 const Player = require('./models/playerModel')
 const app = express()
 
 app.use(express.json())
+
+app.use(cors());
 
 //routes
 
